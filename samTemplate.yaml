@@ -8,3 +8,9 @@ Resources:
       Handler: index.lambda_handler
       Runtime: python2.7
       CodeUri: ./
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: hello.lambda_handler
+      Runtime: python2.7
+      CodeUri: ./
