@@ -6,9 +6,10 @@ import json
 # JWT_EXP_DELTA = 365
 # JWT_SECRET = 'BlaBla'
 # JWT_ALGO = 'HS256'
-
-def lambda_handler(event, context):
-	return "Hello from Lambda!"
+def my_func():
+    print("I am index.py")
+# def lambda_handler(event, context):
+# 	return "Hello from Lambda!"
     # payload = {
     #     'username': 'sib',
     #     'exp': datetime.utcnow() + timedelta(days=JWT_EXP_DELTA)

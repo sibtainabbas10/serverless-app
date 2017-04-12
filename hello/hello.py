@@ -1,4 +1,7 @@
 from __future__ import print_function
+from index import my_func
 
 def lambda_handler(event, context):
-	return "Hellow World 2"
+	print("Hello start")
+	my_func()
+	print("Hello end")
