@@ -7,4 +7,4 @@ Resources:
     Properties:
       Handler: hello.lambda_handler
       Runtime: python2.7
-      CodeUri: ./hello
+      CodeUri: hello/
