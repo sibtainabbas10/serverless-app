@@ -4,7 +4,6 @@ phases:
   install:
     commands:
       - pip install PyJWT -t hello/
-      - mkdir -p util/index.py && cp myfile.txt $_
       - cp util/index.py hello
       - echo Trying to package...
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket serverlessbucket10 
