@@ -5,6 +5,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: sib_serverless
       Handler: hello.lambda_handler
       Runtime: python2.7
       CodeUri: hello/

@@ -1,5 +1,5 @@
 from __future__ import print_function
-from index import my_func
+from .util.index import *
 
 def lambda_handler(event, context):
 	print("Hello start")
