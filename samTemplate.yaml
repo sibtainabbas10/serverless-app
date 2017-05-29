@@ -2,10 +2,10 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Outputs a JWT Token
 Resources:
-  HelloWorldFunction:
+  SignInFunction:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: hello_serverless
-      Handler: hello.lambda_handler
+      FunctionName: signin_serverless
+      Handler: rest_um_signin.lambda_handler
       Runtime: python2.7
-      CodeUri: hello/
+      CodeUri: rest_um_signin/
