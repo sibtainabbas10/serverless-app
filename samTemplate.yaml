@@ -9,10 +9,3 @@ Resources:
       Handler: hello.lambda_handler
       Runtime: python2.7
       CodeUri: hello/
-  LoginFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: login_serverless
-      Handler: login.lambda_handler
-      Runtime: python2.7
-      CodeUri: login/
