@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - pip install PyJWT -t hello/ login/
+      - pip install PyJWT -t hello/
       - echo hello login | xargs -n 1 cp -R util lib
       - echo Trying to package...
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket serverlessbucket10 
