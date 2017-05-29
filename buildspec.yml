@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - mkdir hello && cp hello.py
+      - mkdir hello && cp hello.py hello
       - echo hello | xargs -n 1 cp -R util lib
       - echo Trying to package...
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket serverlessbucket10 
